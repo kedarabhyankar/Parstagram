@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="KNG-3H-qhL">
             <objects>
-                <viewController id="Ra6-k6-B7g" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="Ra6-k6-B7g" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b9u-hB-NWY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,6 +146,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="uJ8-YB-Wkh">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fU1-bw-H4N">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="BYZ-38-t0r" id="GoD-So-L3n"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="hLV-bn-m0M">
                             <connections>
                                 <segue destination="09m-oz-Xd9" kind="presentation" id="8xZ-ty-hGK"/>
@@ -153,6 +158,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="logoutButton" destination="fU1-bw-H4N" id="v3f-Xz-7vk"/>
                         <outlet property="tableView" destination="Ft0-ds-cld" id="HDQ-AF-izz"/>
                     </connections>
                 </viewController>

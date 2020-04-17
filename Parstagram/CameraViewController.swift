@@ -10,14 +10,15 @@ import UIKit
 import AlamofireImage
 import Parse
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,
+UITextFieldDelegate{
     
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var commentInput: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.commentInput.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -66,6 +67,11 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let scaledImage = image.af.imageScaled(to: size)
         imageView.image = scaledImage
         dismiss(animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     /*
      // MARK: - Navigation

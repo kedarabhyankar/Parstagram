@@ -211,7 +211,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NZc-yJ-5fW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H4C-py-HUE" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="feedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="H4C-py-HUE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hCv-vk-2aM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>

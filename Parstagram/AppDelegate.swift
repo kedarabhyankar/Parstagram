@@ -12,7 +12,7 @@ import Parse
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    
+    var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -21,6 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.applicationId = "myAppId"
                 configuration.server = "https://parstagram-kedar.herokuapp.com/parse"
             }))
+        
+        if PFUser.current() != nil{
+            //am already logged in, so bypass IVC
+            let main = UIStoryboard(name: "Main", bundle : nil)
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "feedNavigationController")
+            window?.rootViewController = feedNavigationController
+        }
         return true
     }
     

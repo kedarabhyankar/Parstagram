@@ -24,11 +24,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func onLogoutButton(_ sender: Any) {
         PFUser.logOut()
         let main = UIStoryboard(name: "Main", bundle: nil)
-        let loginVC = main.instantiateViewController(withIdentifier: "loginViewController")
+        let loginVC = main.instantiateViewController(withIdentifier: "LoginViewController")
         let delegate = UIApplication.shared.delegate as! AppDelegate
-        
         delegate.window?.rootViewController = loginVC
-        
+        print("logged out!")
+        self.dismiss(animated: true, completion: nil)
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

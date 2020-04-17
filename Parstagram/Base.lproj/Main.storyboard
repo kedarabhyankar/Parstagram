@@ -88,11 +88,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="423" id="kdZ-PT-zOD" customClass="PostTableViewCell" customModule="Parstagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="423"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="367" id="kdZ-PT-zOD" customClass="PostTableViewCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="367"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kdZ-PT-zOD" id="dzq-fX-RKT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="423"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="367"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R8s-8w-DGX">
@@ -105,8 +105,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kedar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlv-g7-84t">
                                                     <rect key="frame" x="15" y="339" width="100" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="VH9-5K-ozR"/>
-                                                        <constraint firstAttribute="width" constant="100" id="mTo-js-Hd3"/>
+                                                        <constraint firstAttribute="width" constant="100" id="VH9-5K-ozR"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -127,6 +126,8 @@
                                                 <constraint firstItem="Zlv-g7-84t" firstAttribute="leading" secondItem="dzq-fX-RKT" secondAttribute="leadingMargin" id="Ukw-Kb-rQ4"/>
                                                 <constraint firstItem="6V2-qS-GIA" firstAttribute="leading" secondItem="Zlv-g7-84t" secondAttribute="trailing" constant="5" id="VF8-22-laq"/>
                                                 <constraint firstItem="R8s-8w-DGX" firstAttribute="leading" secondItem="dzq-fX-RKT" secondAttribute="leadingMargin" id="ZCD-sI-hvw"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zlv-g7-84t" secondAttribute="bottom" constant="7" id="cyn-Di-ClE"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6V2-qS-GIA" secondAttribute="bottom" constant="7" id="jTZ-qQ-YAs"/>
                                                 <constraint firstItem="Zlv-g7-84t" firstAttribute="top" secondItem="R8s-8w-DGX" secondAttribute="bottom" constant="8" id="m7c-cK-1ls"/>
                                                 <constraint firstItem="Zlv-g7-84t" firstAttribute="leading" secondItem="dzq-fX-RKT" secondAttribute="leadingMargin" id="oEp-sj-DtC"/>
                                                 <constraint firstItem="6V2-qS-GIA" firstAttribute="leading" secondItem="Zlv-g7-84t" secondAttribute="trailing" constant="5" id="pvY-pP-0rZ"/>
@@ -140,37 +141,39 @@
                                             <outlet property="userNameLabel" destination="Zlv-g7-84t" id="oyg-OS-Nku"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="40" id="GUP-4r-MTQ">
-                                        <rect key="frame" x="0.0" y="451" width="375" height="40"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTableViewCell" rowHeight="42" id="2t1-uP-md6" customClass="CommentTableViewCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="395" width="375" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GUP-4r-MTQ" id="rKI-vn-WXc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2t1-uP-md6" id="W1v-3K-trM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0S4-eM-bLX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="20.333333333333332"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kedar2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZ2-1H-XE4">
+                                                    <rect key="frame" x="15" y="11" width="59" height="20"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIa-5a-5dS">
-                                                    <rect key="frame" x="87" y="0.0" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some cool comment!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5B-gW-QjL">
+                                                    <rect key="frame" x="82" y="9.9999999999999982" width="163" height="19.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="sIa-5a-5dS" firstAttribute="leading" secondItem="0S4-eM-bLX" secondAttribute="trailing" constant="8" id="CwO-fI-490"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sIa-5a-5dS" secondAttribute="bottom" constant="10" id="G0n-MR-P6u"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0S4-eM-bLX" secondAttribute="bottom" constant="1" id="LAt-gj-LMQ"/>
-                                                <constraint firstItem="0S4-eM-bLX" firstAttribute="top" secondItem="rKI-vn-WXc" secondAttribute="top" id="SmU-8N-3l8"/>
-                                                <constraint firstAttribute="trailing" secondItem="sIa-5a-5dS" secondAttribute="trailing" constant="246" id="XN5-BA-hI5"/>
-                                                <constraint firstItem="0S4-eM-bLX" firstAttribute="leading" secondItem="rKI-vn-WXc" secondAttribute="leading" id="YmO-PK-khI"/>
-                                                <constraint firstItem="sIa-5a-5dS" firstAttribute="top" secondItem="rKI-vn-WXc" secondAttribute="top" constant="9" id="fHd-60-UQ4"/>
-                                                <constraint firstItem="sIa-5a-5dS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0S4-eM-bLX" secondAttribute="trailing" constant="8" symbolic="YES" id="rcK-W3-V2f"/>
+                                                <constraint firstItem="CZ2-1H-XE4" firstAttribute="leading" secondItem="W1v-3K-trM" secondAttribute="leading" constant="15" id="03J-fy-fup"/>
+                                                <constraint firstItem="Y5B-gW-QjL" firstAttribute="top" secondItem="W1v-3K-trM" secondAttribute="top" constant="10" id="6X5-Sq-70l"/>
+                                                <constraint firstItem="Y5B-gW-QjL" firstAttribute="leading" secondItem="CZ2-1H-XE4" secondAttribute="trailing" constant="8" id="88l-Xy-ViU"/>
+                                                <constraint firstItem="CZ2-1H-XE4" firstAttribute="top" secondItem="W1v-3K-trM" secondAttribute="top" constant="11" id="DLt-Fm-pZG"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y5B-gW-QjL" secondAttribute="bottom" constant="12.67" id="DQW-BV-TWg"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CZ2-1H-XE4" secondAttribute="bottom" constant="11" id="WnY-TL-DhL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentData" destination="Y5B-gW-QjL" id="mqY-Dd-tdb"/>
+                                            <outlet property="commentUsername" destination="CZ2-1H-XE4" id="VSF-DM-01H"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

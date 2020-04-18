@@ -30,7 +30,10 @@ UITextFieldDelegate{
         post["author"] = PFUser.current()!
         
         let imageData = imageView.image!.pngData()
-        let file = PFFileObject(data: imageData!)
+        let firstPartFileName = randomString(length: 20)
+        let fullFileName = firstPartFileName + ".png"
+        print(fullFileName)
+        let file = PFFileObject(name: fullFileName, data: imageData!)
         
         post["image"] = file
         
@@ -72,6 +75,11 @@ UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
+    }
+    
+    func randomString(length: Int) -> String {
+      let letters = "abcdefghijklmnopqrstuvwxyz0123456789"
+      return String((0..<length).map{ _ in letters.randomElement()! })
     }
     /*
      // MARK: - Navigation

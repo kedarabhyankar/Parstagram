@@ -83,11 +83,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.commentUsername.text = user.username
             return cell
         }
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let post = posts[indexPath.row]
+        let post = posts[indexPath.section]
         let comment = PFObject(className: "comments")
         comment["text"] = "This is a random comment!"
         comment["post"] = post
